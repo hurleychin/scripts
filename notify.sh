@@ -26,3 +26,6 @@ case "$(uname -s)" in
     echo "[notification] $TITLE: $MESSAGE"
     ;;
 esac
+
+# Push to ntfy
+curl -k -d "$TITLE: $MESSAGE" https://qhl123.wicp.net:9265/7VVmF1Zzfmvkn1jY 2>/dev/null &
